@@ -12,12 +12,12 @@
     <p id="info"></p>
     <button id="start" onclick="start()">Start</button>
     <button id="pause" onclick="pause()">Pause</button>
-    <button id="start" onclick="stop()">Stop</button>
+    <button id="stop" onclick="stop()">Stop</button>
     <button id="next" onclick="nextFrame()" disabled>Next</button>
     <button id="prev" onclick="prevFrame()" disabled>Previous</button>
 
     <script>
-        var fix = setInterval(function () {
+        var set = setInterval(function () { // konumu belirliyor
             if (running) {
                 i++;
             }
@@ -45,9 +45,9 @@
             canvas.width = 250;
             canvas.height = 250;
         }
-        setInterval(fix, 100);
+        setInterval(set, 100);
 
-        function fetching() {
+        function FetchOp() {
             for (var i = 1; i < 9; i++) {
                 fetch("https://haticecaglar.github.io/advancedProgrammingTec/HW3/sprite/" + i.toString() + ".png")
                     .then(res => res.blob())
@@ -108,7 +108,7 @@
     </script>
     <script>
         animate();
-        fetching();
+        FetchOp();
     </script>
 </body>
 
