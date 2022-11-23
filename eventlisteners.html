@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <!-- saved from url=(0045)https://blm305.github.io/2022/work/fetch.html -->
 <html lang="en-US">
@@ -102,4 +103,110 @@
 
 </body>
 
+=======
+<!DOCTYPE html>
+<!-- saved from url=(0045)https://blm305.github.io/2022/work/fetch.html -->
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" href="https://blm-fsmvu.github.io/305/images/icon192.png">
+    <title> fetch() </title>
+
+    <style>
+        /* CSS comment */
+        body {
+            max-width: 440px;
+        }
+
+        #url {
+            width: 190px;
+        }
+
+        span,
+        #url {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML comment: Modify all items marked xxx -->
+
+    <h2 id="title" title="Put your name here">xxx</h2>
+
+    <p title="Battery Status (integer)">
+        Battery Status: <span id="lev">xxx</span>
+    </p>
+    <p title="Online Status (integer)">
+        Online Status: <span id="onst">xxx</span>
+    </p>
+    <p title="Keyboard">
+        Keyboard: <span id=kinput></span>
+    </p>
+    <p p id="log" title="MyLog">
+    </p>
+    <hr>
+    <b>Sample code</b>
+    <pre
+        id="sample">function init() {<br>//complete the code below<br>    plat.innerText = 'xxx';<br>    navigator.geolocation<br>      .getCurrentPosition(p =&gt;<br>        loc.innerText = 'xxx'<br>      );<br>    navigator.getBattery().then(b =&gt;<br>        lev.innerText = 'xxx'<br>      );<br>    check()<br>}<br>function check() {<br>//complete the code below<br>    fetch(url.value).then(r =&gt; <br>      resp.innerText = r.ok? 'OK' : 'xxx'<br>    ).catch(e =&gt; <br>      resp.innerText = e<br>    )<br>}</pre>
+
+    <hr>
+
+    <script>
+        "use strict";
+        const input = document.querySelector('navigator.platform');
+        const log = document.getElementById('log');
+
+        window.addEventListener('keydown', logKey);
+
+        function logKey(e) {
+            log.textContent += ` ${e.code}`;
+        }
+        window.onoffline = (event) => {
+            onst.innerText = "offlibe";
+        };
+        window.ononline = (event) => {
+            onst.innerText = "online";
+        };
+        navigator.getBattery().then(function (battery) {
+            battery.onlevelchange = function () {
+                lev.innerText = '';
+                lev.innerText += '\n'
+                lev.innerText += (battery.charging ? '\ncharging' : '\ndischarging');
+                lev.innerText += '\n' + battery.level;
+
+                if (battery.charging)
+                    lev.innerText += "\nCharging time: " + (battery.chargingTime / 60) + ":" + (battery.chargingTime % 60) + " remaining";
+                else
+                    lev.innerText += "\nDischarging time: " + (battery.dischargingTime / 60) + ":" + (battery.dischargingTime % 60) + " remaining";
+            };
+        });
+        function init() {
+            //complete the code below
+
+
+            check()
+        }
+        function check() {
+            //complete the code below
+            fetch(url.value).then(r =>
+                resp.innerText = r.ok ? 'OK' : 'TypeError: Failed to fetch'
+            ).catch(e =>
+
+                resp.innerText = e
+            )
+        }
+        title.innerText = document.title;
+        sample.innerText = init + '\n' + check;
+        init();
+    </script>
+
+
+
+</body>
+
+>>>>>>> 19088125cd87a3fc17a693fa5180fc1c0718a733
 </html>
