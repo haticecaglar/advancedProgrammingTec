@@ -2,6 +2,7 @@ const topLeft = document.querySelector('.top-left-panel');
 const topRight = document.querySelector('.top-right-panel');
 const bottomLeft = document.querySelector('.bottom-left-panel');
 const bottomRight = document.querySelector('.bottom-right-panel');
+let score = 0;
 
 const getRandomPanel = () => {
     const panels = [
@@ -39,6 +40,7 @@ const panelClicked = panelClicked => {
             //Start new round
             sequences.push(getRandomPanel());
             sequencesToGuess=[...sequences];
+            score++;
             startFlashing();
         }
     }else{
