@@ -1,6 +1,6 @@
 
 <!-- saved from url=(0047)https://haticecaglar.github.io/advancedProgrammingTec/ -->
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
    
    <link rel="manifest" href="https://haticecaglar.github.io/advancedProgrammingTec/">
    <style>
