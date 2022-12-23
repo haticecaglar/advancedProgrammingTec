@@ -38,7 +38,7 @@
    
   
    <h1 id="projects">Term Project</h1>
-    <p>Term Project: <a href=" https://haticecaglar.github.io/advancedProgrammingTec/blob/main/SimonGame/simonsay.html">Term Project</a></p>
+    <p>Term Project: <a href=" https://haticecaglar.github.io/advancedProgrammingTec/SimonGame/simonsay.html">Term Project</a></p>
  
  
   
