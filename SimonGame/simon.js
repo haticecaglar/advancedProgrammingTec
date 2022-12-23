@@ -2,6 +2,7 @@ const topLeft = document.querySelector('.top-left-panel');
 const topRight = document.querySelector('.top-right-panel');
 const bottomLeft = document.querySelector('.bottom-left-panel');
 const bottomRight = document.querySelector('.bottom-right-panel');
+const skor_html =document.querySelector('.score');
 let score = 0;
 
 const getRandomPanel = () => {
@@ -41,6 +42,7 @@ const panelClicked = panelClicked => {
             sequences.push(getRandomPanel());
             sequencesToGuess=[...sequences];
             score++;
+            skor_html.innerHTML = "Skor:".concat(score);
             startFlashing();
         }
     }else{
@@ -57,5 +59,3 @@ const startFlashing= async () => {
     canClick = true;
 
 }
-
-startFlashing();
