@@ -1,6 +1,6 @@
 
 <!-- saved from url=(0047)https://haticecaglar.github.io/advancedProgrammingTec/ -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
    
    <link rel="manifest" href="https://haticecaglar.github.io/advancedProgrammingTec/">
    <style>
@@ -13,6 +13,9 @@
 
 <body>
    <h1 id="advancedprogramming">Advanced Programming Techniques</h1>
+   <img src=" https://haticecaglar.github.io/advancedProgrammingTec/myAvatar/Avatar.jpeg" alt="Avatar"width="200" height="200">
+   <h2 id="name">Advanced Hatice Çağlar</h2>
+   <link rel="Avatar" href="Avatar.jpeg" />
    <p>BLM19305E Advanced Programming Techniques <a href="https://haticecaglar.github.io/advancedProgrammingTec/">repository</a></p>
    <h1 id="class-works">Class works</h1>
    <p>CW0: <a href="https://haticecaglar.github.io/advancedProgrammingTec/counting.html"> Browser Tool</a></p>
@@ -38,9 +41,7 @@
    
   
    <h1 id="projects">Term Project</h1>
-    <p>Term Project: <a href=" https://haticecaglar.github.io/advancedProgrammingTec/SimonGame/simonsay.html">Term Project</a></p>
- 
- 
-  
+   <p>Term Project: <a href=" https://haticecaglar.github.io/advancedProgrammingTec/SimonGame/simonsay.html">Term Project</a></p>
 
 </body></html>
+
