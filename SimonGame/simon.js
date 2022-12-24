@@ -48,6 +48,8 @@ const panelClicked = panelClicked => {
     }else{
         //end game
         alert('game over');
+       
+
     }
 };
 
