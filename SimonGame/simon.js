@@ -70,6 +70,7 @@ const panelClicked = panelClicked => {
 
     }
     
+    
 };
 
 const startFlashing = async () => {
