@@ -65,8 +65,11 @@ const panelClicked = panelClicked => {
         // alert('game over');
         showGameOver();
         restartButton.addEventListener('click', restartGame);
+        
+     
 
     }
+    
 };
 
 const startFlashing = async () => {
