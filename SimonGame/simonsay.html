@@ -7,9 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Simon Say</title>
   <link rel="stylesheet" href="style.css" />
+
 </head>
 
 <body>
+  <h1 id="simonsay">Simon Say</h1>
   <div>
     <div onclick="panelClicked(event.currentTarget)" class="panel top-left-panel "></div>
     <div onclick="panelClicked(event.currentTarget)" class="panel top-right-panel"></div>
@@ -22,7 +24,13 @@
   <div class="center"></div>
   <button onclick="startFlashing()">Start</button>
   <div class="ScoreDescription">
-    <h2> <p class="score" >Score:0</p></h2>
+    <h2>
+      <p class="score">Score:0</p>
+    </h2>
+  </div>
+  <div id="game-over-screen" class="hidden">
+    <p>Game over!</p>
+    <button id="restart-button">Restart</button>
   </div>
   <script src="simon.js"></script>
 </body>

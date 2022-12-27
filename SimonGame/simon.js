@@ -2,8 +2,22 @@ const topLeft = document.querySelector('.top-left-panel');
 const topRight = document.querySelector('.top-right-panel');
 const bottomLeft = document.querySelector('.bottom-left-panel');
 const bottomRight = document.querySelector('.bottom-right-panel');
-const skor_html =document.querySelector('.score');
+const skor_html = document.querySelector('.score');
+const gameOverScreen = document.getElementById('game-over-screen');
+const restartButton = document.getElementById('restart-button');
 let score = 0;
+
+function showGameOver() {
+    document.getElementById("game-over-screen").style.display = "block";
+  }
+  
+  function hideGameOver() {
+    document.getElementById("game-over-screen").style.display = "none";
+  }
+function restartGame() {
+    // Reset game state here
+    hideGameOver();
+}
 
 const getRandomPanel = () => {
     const panels = [
@@ -40,20 +54,22 @@ const panelClicked = panelClicked => {
         if (sequencesToGuess.length === 0) {
             //Start new round
             sequences.push(getRandomPanel());
-            sequencesToGuess=[...sequences];
+            sequencesToGuess = [...sequences];
             score++;
             skor_html.innerHTML = "Skor:".concat(score);
             startFlashing();
+
         }
-    }else{
+    } else {
         //end game
-        alert('game over');
-       
+        // alert('game over');
+        showGameOver();
+        restartButton.addEventListener('click', restartGame);
 
     }
 };
 
-const startFlashing= async () => {
+const startFlashing = async () => {
     canClick = false;
     for (const panel of sequences) {
         await flash(panel);
