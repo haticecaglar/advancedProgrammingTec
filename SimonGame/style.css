@@ -77,7 +77,7 @@ body {
 
 #hearts img {
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 5px;
     width: 100px;
     height: 100px;
 }
