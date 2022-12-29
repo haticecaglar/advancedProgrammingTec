@@ -5,6 +5,7 @@ const bottomRight = document.querySelector('.bottom-right-panel');
 const skor_html = document.querySelector('.score');
 const gameOverScreen = document.getElementById('game-over-screen');
 const restartButton = document.getElementById('restart-button');
+const hearts = document.getElementById("hearts");
 let score = 0;
 
 function showGameOver() {
@@ -45,6 +46,7 @@ const flash = (panel) => {
         }, 1000)
     });
 };
+
 let canClick = false;
 
 const panelClicked = panelClicked => {
